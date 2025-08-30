@@ -257,7 +257,7 @@
 }
 #skills h1{
   position: absolute;
-  left: 2rem;
+  left: 5rem;
 }
 #skills .image{
   display: none;
@@ -301,3 +301,4 @@ html {
   background: linear-gradient(45deg, var(--bgd-color), var(--mx-color));
 
 }
+
