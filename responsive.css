@@ -125,6 +125,7 @@
   }
   #skills h1 {
     font-size: 1.7rem;
+    left:2rem;
   }
   #skills h2 {
     width: 150px;
@@ -298,4 +299,5 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(45deg, var(--bgd-color), var(--mx-color));
+
 }
