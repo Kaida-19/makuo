@@ -1,0 +1,301 @@
+@media (max-width: 768px) {
+  :root {
+    --bgd-color: #00ffff34;
+    --primary-color: white;
+    --font: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+      Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    --size-1: clamp(14px, 4vw, 30px);
+    --size-2: clamp(9px, 2.5vw, 15px);
+    --caret-width: 2px;
+    --caret-speed: 800ms;
+  }
+  body {
+    width: 100%;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+  }
+  .container .hero {
+    background-size: 100% 100%;
+  }
+  .container .hero nav {
+    height: 60px;
+  }
+  .container .hero nav .nav-logo {
+    position: absolute;
+    left: 1rem;
+  }
+  .container .hero nav ul {
+    display: none;
+    width: 200px;
+    flex-direction: column;
+    background: #ffffff9c;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+  }
+  .container .hero nav ul.active {
+    display: flex;
+  }
+  .container .hero nav .hamburger {
+    position: absolute;
+    right: 1rem;
+  }
+  .container .hero nav .hamburger .bar {
+    display: flex;
+  }
+  .container .hero nav .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+  }
+  .container .hero nav .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .container .hero nav .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+  }
+  .line-1 {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .line-2 {
+    font-size: 0.7rem;
+    opacity: 0.9;
+  }
+  .container .hero .profile {
+    position: absolute;
+    bottom: 18.5rem;
+    right: 5rem;
+    width: 150px;
+  }
+  .container .hero .service {
+    width: 500px;
+    padding: 5px 15px;
+    left: 3rem;
+    bottom: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  .container .hero .service .services {
+    font-size: 14px;
+  }
+  .container .hero .services h3 {
+    letter-spacing: 1px;
+  }
+  .container .hero .hbutn {
+    bottom: 14rem;
+  }
+  .container .hero .hbutn input {
+    border-radius: 23px;
+  }
+  #about {
+    height: 70vh;
+  }
+  #about .image {
+    position: absolute;
+    left: 5rem;
+  }
+  #about h1 {
+    position: absolute;
+    right: 3rem;
+    top: 4rem;
+    animation: Pulse 5s ease-in-out infinite alternate;
+  }
+  @keyframes Pulse {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  #about p {
+    position: absolute;
+    right: 20%;
+    top: 15rem;
+    width: 60%;
+    font-size: 90%;
+  }
+  #skills {
+    height: 70vh;
+    margin-top: 2rem;
+  }
+  #skills h1 {
+    font-size: 1.7rem;
+  }
+  #skills h2 {
+    width: 150px;
+    left: 6.5rem;
+  }
+  #skills .image {
+    width: 300px;
+    min-height: 200px;
+    position: absolute;
+    left: 0;
+    top: 3rem;
+  }
+  .skills {
+    width: 50%;
+    right: 1rem;
+  }
+  .skill {
+    margin: 10px 0;
+  }
+  .skill-name {
+    font-size: 12px;
+  }
+  .skill-bar {
+    height: 16px;
+  }
+  #portfolio h1 {
+    font-size: 1.7rem;
+  }
+  #contact h1 {
+    font-size: 1.7rem;
+  }
+  .review-form-section {
+    width: 80%;
+    padding: 1rem;
+  }
+  .star {
+    font-size: 1.4rem;
+  }
+  .form-submit input[type="submit"] {
+    padding: 10px 18px;
+  }
+  .success-message i {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  .reviews-container {
+    gap: 1rem;
+  }
+  .review-card {
+    flex: 0 0 16.5em;
+  }
+  .connect p {
+    font-size: 1rem;
+    font-size: 15px;
+  }
+  .qr{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+}
+@media (max-width: 499px) {
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .hero{
+    min-width: 100%;
+    min-height: 100vh;
+    background-size: 100%;
+  }
+  .container .hero .wrap{
+    top: 19rem;
+    left: -1rem;
+  }
+  .container .hero .profile{
+    bottom: 29rem;
+    right: 2rem;
+  }
+  .container .hero .hbutn{
+    bottom: 18rem;
+    left: 6rem;
+  }
+  .container .hero .service{
+    left: 0;
+    bottom: 1.5rem;
+  }
+  .container .hero .service {
+    width: 100%;
+    padding: 5px 15px;
+    left: .5rem;
+    bottom: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+  .container .hero .service .services {
+    font-size: 12px;
+  }
+  .container .hero .services h3 {
+    letter-spacing: 0;
+  }
+  #about {
+  width: 100%;
+  max-height: 60vh; 
+}
+#about p{
+  width: 80%;
+  right: 1.5rem;
+}
+#skills{
+  max-height: 50vh;
+  top: 1rem;
+}
+#skills h1{
+  position: absolute;
+  left: 2rem;
+}
+#skills .image{
+  display: none;
+}
+.skills{
+  width: 90%;
+}
+.review-card{
+  flex: 0 0 100%;
+}
+.qr{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, var(--mx-color), var(--bgd-color));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, var(--bgd-color), var(--mx-color));
+}
