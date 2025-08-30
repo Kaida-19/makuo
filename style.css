@@ -377,7 +377,7 @@ body {
   cursor: pointer;
   position: absolute;
   top: 0.5rem;
-  right: 23rem;
+  right: 50%;
 }
 #skills h2 {
   color: rgb(7, 194, 194);
@@ -1040,3 +1040,4 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(45deg, var(--bgd-color), var(--mx-color));
 }
+
