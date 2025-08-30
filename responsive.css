@@ -125,7 +125,6 @@
   }
   #skills h1 {
     font-size: 1.7rem;
-    left:2rem;
   }
   #skills h2 {
     width: 150px;
@@ -257,7 +256,7 @@
 }
 #skills h1{
   position: absolute;
-  left: 5rem;
+  left: 3rem;
 }
 #skills .image{
   display: none;
@@ -301,4 +300,5 @@ html {
   background: linear-gradient(45deg, var(--bgd-color), var(--mx-color));
 
 }
+
 
