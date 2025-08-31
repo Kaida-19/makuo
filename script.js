@@ -316,11 +316,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // localStorage.clear();
 new QRCode(document.getElementById("qrcode"), {
-  text: "https://www.google.com",
+  text: "JUST GIVE ME A REVIEW BEFORE YOU LEAVE.\n THANKS ",
   width: 100,
   height: 100,
   colorDark: "#000000",
   colorLight: "#ffffff",
   correctLevel: QRCode.CorrectLevel.H,
 });
+
 
