@@ -316,12 +316,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // localStorage.clear();
 new QRCode(document.getElementById("qrcode"), {
-  text: "JUST GIVE ME A REVIEW BEFORE YOU LEAVE.\n THANKS ",
+  text: "I just want to take a moment to sincerely\n thank you for trusting us and \ngiving us the opportunity to serve you.\n Your support and partnership mean a lot,\n and it motivates us to keep delivering our very best.\n We truly appreciate you and look \nforward to many more successes together.\n Thank you!” ",
   width: 100,
   height: 100,
   colorDark: "#000000",
   colorLight: "#ffffff",
   correctLevel: QRCode.CorrectLevel.H,
 });
+
 
 
